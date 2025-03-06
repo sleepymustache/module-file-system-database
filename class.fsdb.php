@@ -370,6 +370,7 @@ class _Table {
 
 		if ($updated > 0) {
 			$this->edited = true;
+			$this->data = array_values($this->data);
 		}
 
 		return $updated;
